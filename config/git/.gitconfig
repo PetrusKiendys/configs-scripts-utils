@@ -1,0 +1,34 @@
+# Description:	.gitconfig file for sharing useful aliases and other settings
+# Note:			Remember to replace placeholder values with actual values
+#				eg. fields user.email and user.name etc.
+
+[user]
+	email = [mymail@mail.com]
+	name = [FirstName LastName]
+[push]
+	default = simple
+[cola]
+	defaultrepo = [path to default repo]
+[color]
+	ui = true
+[format]
+	pretty = oneline
+[alias]
+	co = commit
+	ci = commit
+	ch = checkout
+	st = status
+	df = diff
+	br = branch
+	lg = log --pretty=format:'%C(yellow)%h%C(reset)%C(blue bold)%d%C(reset) %s %C(magenta bold)(%cr by %an)%C(reset)' -n5
+	lggr = log --graph --oneline --all --decorate
+	lgmsg = log --pretty=medium
+	lgmsg-short = log --format='%C(yellow)commit %H%C(reset)%n%B'
+	lgmsg-long = "!___lgmsg-long.sh"
+	grp = grep --break --heading --line-number
+	unstage = reset HEAD --
+[core]
+	logallrefupdates = true
+[grep]
+	extendedRegexp = true
+	patternType = extended

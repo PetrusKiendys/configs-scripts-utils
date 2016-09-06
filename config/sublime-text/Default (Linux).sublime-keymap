@@ -1,0 +1,19 @@
+[
+	// duplicate line
+	{ "keys": ["ctrl+shift+down"], "command": "duplicate_line" },
+
+	// toggle comment
+	{ "keys": ["ctrl+shift+c"], "command": "toggle_comment", "args": { "block": false } },
+
+	// "refactor"
+	{ "keys": ["ctrl+shift+r"], "command": "find_all_under" },
+
+	// toggle find-panel
+	{ "keys": ["ctrl+f"], "command": "show_panel", "args": {"panel": "find", "reverse": false, "toggle": true} },
+
+	// show console
+	{ "keys": ["§"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
+
+	// Package: Alignment
+	//{ "keys": ["ctrl+alt+a"], "command": "alignment" },
+]

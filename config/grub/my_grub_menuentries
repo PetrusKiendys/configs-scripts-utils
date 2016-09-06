@@ -1,0 +1,22 @@
+#!/bin/bash
+# This file contains my customized menuentries for Grub.
+# Place any custom menuentry into /etc/grub.d/40_custom
+# and run "sudo update-grub" for changes to take effect.
+
+# for the bootable AVG Rescue disc(?)
+menuentry 'boot USB UUID=1FBB-BCFB option=1' --class usb --class bootable --class rescue-media $menuentry_id_option 'osprober-chain-1FBB-BCFB' {
+	insmod ext2
+	insmod net
+	insmod http
+	set root='hd1,msdos1'
+	search --no-floppy --fs-uuid --set=root 1FBB-BCFB
+	chainloader +1
+	boot
+}
+
+# NOTE: Doesn't work (for 1FBB-BCFB)
+#menuentry "boot USB UUID=1FBB-BCFB option=2" {
+#    set root=1FBB-BCFB
+#    linux /vmlinuz root=1FBB-BCFB ro quiet splash
+#    initrd /initrd.img
+#}
