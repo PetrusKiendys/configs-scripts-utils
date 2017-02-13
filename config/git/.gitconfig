@@ -27,8 +27,17 @@
 	lgmsg-long = "!___lgmsg-long.sh"
 	grp = grep --break --heading --line-number
 	unstage = reset HEAD --
+	whatadded = log --diff-filter=A
+	# whatchanged is added by default
+
+	# FIX: unimplemented or not working
+	# whenadded = ...
+	# whenadded-customformat = "!/path/to/git-custom-whenadded-customformat.sh"
+	# whenchanged = ...
+	# whenchanged-customformat = ...
 [core]
 	logallrefupdates = true
+	editor = nano
 [grep]
 	extendedRegexp = true
 	patternType = extended
