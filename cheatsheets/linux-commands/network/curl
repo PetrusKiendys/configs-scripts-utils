@@ -1,0 +1,26 @@
+# curl a resource by sending a GET request (default)
+curl http://example.com/
+
+# GET a resource (implied when -X is omitted)
+curl -X GET http://example.com/
+
+# POST data to a resource
+curl -X POST -d "foo" http://example.com/
+
+# GET a resource and follow redirection (3XX response code)
+curl -L http://example.com/
+
+# GET a resource and allow insecure SSL connections/transfers
+curl -k http://example.com/
+
+# GET a resource and print verbose output
+curl -v http://example.com/
+
+# GET a resource and specify an HTTP header
+curl -H <http_header> http://example.com/
+
+# GET a resource, provide Basic Auth credentials for authentication
+curl -u "user:password" http://example.com/
+
+# GET a resource, suppress progress bar, error messages and response body, output only the the HTTP response code, (...)
+curl -s -o /dev/null -w "%{http_code}\n" -k -u "user:password" -H "Accept: application/json" http://example.com/

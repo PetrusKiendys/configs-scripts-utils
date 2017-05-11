@@ -1,0 +1,8 @@
+# general usage: listen for TCP packets on any interface on port 9999 (don't reverse resolve IP and port into names, display numeric values)
+tcpdump -i any -nn port XXXX
+ 
+# listen for TCP packets, print data in hex
+tcpdump -i any -nn -X port XXXX
+ 
+# listen for TCP packets, print data in ascii (with a specified source host and port)
+tcpdump -i any -nn -A "src host 10.10.1.1 and port XXXX"

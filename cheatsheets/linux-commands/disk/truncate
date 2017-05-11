@@ -1,0 +1,2 @@
+# truncate - trunc file down to 1kb
+truncate -s 1000 file.ext

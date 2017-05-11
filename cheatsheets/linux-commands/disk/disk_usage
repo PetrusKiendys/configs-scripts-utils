@@ -1,0 +1,8 @@
+# show disk usage in human-readable format, depth 1, exclude /proc directory
+du -h -d 1 --exclude=/proc /
+ 
+# show disk usage of a directory in human-readable format, summarize size
+du -sh /path/to/directory
+ 
+# list files in long listing format, show human-readable sizes
+ls -lh /path/to/directory

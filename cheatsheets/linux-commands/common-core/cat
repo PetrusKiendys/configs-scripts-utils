@@ -1,0 +1,2 @@
+# cat - "pretty" print contents of listed files
+for file in `find . -iname "*<filename_regex>*" | grep "<optional_file_suffix>"`; do echo "==========" && echo `readlink -f $file` && echo "=========="; cat $file; echo -e "\n\n\n"; done | less -MR

@@ -1,0 +1,2 @@
+# iptables-save default location
+/etc/sysconfig/iptables

@@ -1,0 +1,17 @@
+# get default zone
+firewall-cmd --get-default-zone
+
+# open up a TCP port (in zone 'public')
+firewall-cmd --zone=public --add-port=XXXX/tcp
+
+# open up a TCP port (in zone 'public'), permanently
+firewall-cmd --zone=public --permanent --add-port=XXXX/tcp
+
+# close a TCP port
+firewall-cmd --remove-port=XXXX/tcp
+
+# list all open ports (of default zone)
+firewall-cmd --list-ports
+
+# list all properties (of default zone)
+firewall-cmd --list-all

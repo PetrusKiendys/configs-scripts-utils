@@ -1,0 +1,9 @@
+# Useful yum commands
+yum check-update
+yum update
+yum upgrade
+yum list installed
+yum list installed | grep "foo"
+yum clean all
+yum remove foo
+yum install foo

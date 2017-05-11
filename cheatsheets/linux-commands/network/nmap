@@ -1,0 +1,9 @@
+# scan specified target aggressively (-A) with aggressive timing template (-T4)
+nmap -A -T4 scanme.nmap.org
+ 
+# scan specified target(s) (range) without scanning all ports (-sn "ping scan") with 1 port scan retry
+nmap -sn --max-retries 1 10.0.0-255.1
+ 
+More commands:
+- https://superuser.com/questions/887887/different-behavior-sudo-nmap-vs-just-nmap/963360#963360
+- https://www.digitalocean.com/community/tutorials/how-to-use-nmap-to-scan-for-open-ports-on-your-vps#how-to-scan-ports-with-nmap

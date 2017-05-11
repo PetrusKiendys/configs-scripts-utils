@@ -1,0 +1,2 @@
+# logstash - debug logstash by grep'ing specified message (using custom shell script)
+./compose-elkplus.sh "logs -f --tail=10 logstash" | grep "\"message\"\ =>\ "

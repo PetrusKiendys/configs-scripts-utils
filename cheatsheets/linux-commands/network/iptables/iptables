@@ -1,0 +1,14 @@
+# list all rules in all chains, in verbose mode (display interfaces), numeric output for IP addresses
+iptables -L -v -n
+ 
+# insert rule for a specified port
+iptables -I INPUT 5 -m state --state NEW -p tcp --dport XXXX -j ACCEPT -m comment --comment "some new rule"
+ 
+# insert rule for a specified port on specified interface
+iptables -I INPUT 5 -m state --state NEW -p tcp --dport XXXX -i ethX -j ACCEPT -m comment --comment "some new rule"
+ 
+# append rule (to end of chain) for a specified ip address and port range
+iptables -A INPUT -m conntrack --ctstate NEW,ESTABLISHED -p tcp -s 10.0.0.0 --dport 1:65535 -j ACCEPT -m comment --comment "some new rule"
+ 
+# delete rule for specified chain
+iptables -D INPUT 1

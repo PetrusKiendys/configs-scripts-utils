@@ -1,0 +1,7 @@
+# useful less flags, from: http://www.greenwoodsoftware.com/less/faq.html#tricks
+
+Start at a specific place in the file
+To start at a specific line number, say line 150, use "less +150 filename". To start where a specific pattern first appears, use "less +/pattern filename". To start at the end of the file, use "less +G filename".
+
+Watch a growing file
+Use the F command to go to the end of the file and keep displaying more text as the file grows. You can do this from the command line by using "less +F ...".

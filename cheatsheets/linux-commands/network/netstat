@@ -1,0 +1,5 @@
+# netstat - (common command) show TCP connections of listening sockets in numeric format listing PID
+netstat -plnt
+
+# netstat - continuously check outbound connections to specified server
+while true; do netstat -natp | grep "10.0.122.7" && echo -e "\n" && sleep 1; done

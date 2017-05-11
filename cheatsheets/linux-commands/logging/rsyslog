@@ -1,0 +1,2 @@
+# rsyslog - debug rsyslog by printing to stdout, set separate pid to avoid conflict with running rsyslog service, compatibility mode 5
+rsyslogd -dn -i /var/run/syslogd2.pid -c 5
