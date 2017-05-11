@@ -1,0 +1,2 @@
+# copy public key into remote machines `~/.ssh/authorized_keys`
+ssh-copy-id -i ~/.ssh/<file>.pub <IP_addr>
