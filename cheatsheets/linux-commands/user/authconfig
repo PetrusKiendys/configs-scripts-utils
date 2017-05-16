@@ -1,0 +1,8 @@
+# authconfig can be used to manage authentication in RHEL
+# Read more:
+#        https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/System-Level_Authentication_Guide/authconfig-install.html
+#        https://linux.die.net/man/8/authconfig
+#        https://www.centos.org/docs/5/html/Deployment_Guide-en-US/s1-authconfig-command-line.html
+
+# authconfig - set up delocalized user management using LDAP
+authconfig --enableldap --enableldapauth --ldapserver="<ip>:<port>" --ldapbasedn="<dns>" --enablemkhomedir --update
