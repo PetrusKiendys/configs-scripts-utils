@@ -1,2 +1,5 @@
 # cp - move similarly named files to target destination (suppress interactive overwrite prompt, rename existing files, suppress error messages)
 for file in `find . -iname "*<source_filename_regex>*" | grep "<optional_file_suffix>"`; do yes yes | \cp --backup=t $file /my/target/destination; done 2>/dev/null
+
+# cp - move matched files (in current directory) to target destination
+find `pwd` -iname "*match_pattern*" | xargs cp -t /my/target/destination
