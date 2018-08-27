@@ -1,0 +1,29 @@
+## My Examples
+# search or filter by email address
+(proxyAddresses=john.doe@mail.com)
+
+# search or filter by arbitrary ID
+(ID=xxx)
+(customerID=xxx)
+
+
+
+## LDAP Wiki Examples
+#    https://ldapwiki.com/wiki/Main
+#        https://ldapwiki.com/wiki/LDAP%20Query%20Basic%20Examples
+
+# display all entries
+(objectclass=*)
+
+# display all entries which have a mail attribute (AttributeType)
+(mail=*)
+
+# wildcard searches
+(mail=*@*)                # return entries with any valid [rfc822Name] mail address
+(sn=s*)                   # return entries with surnames starting with 's' or 'S'
+(telephonenumber=*555)    # return entries with telephone numbers that end with '555'
+(cn=*a*i*)                # return entries with common names with both 'a' and 'i' anywhere
+
+# exact matches (searches)
+(sn=smith)                # return exact match "Smith" but NOT "Smit"
+(objectclass=person)      # return entries which use person objectclass
