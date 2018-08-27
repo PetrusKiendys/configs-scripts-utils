@@ -1,0 +1,9 @@
+# print everything (filter nothing)
+cat data.json | jq .
+cat data.json | jq .[]
+
+# print specific element based on index number
+cat data.json | jq .[x]
+
+# print specific element based on value of key
+cat data.json | jq '.[] | select(.fooKey == "barValue")'
