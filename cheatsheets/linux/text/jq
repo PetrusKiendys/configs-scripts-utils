@@ -7,3 +7,11 @@ cat data.json | jq .[x]
 
 # print specific element based on value of key
 cat data.json | jq '.[] | select(.fooKey == "barValue")'
+
+# print specific element based on name of key
+cat data.json | jq '.[].fooKey'
+
+# traverse nested JSON structure (example), both by name of key and index number
+cat data.json | jq '.[][][0].value'
+		jq '.fooKey.barKey.bazKey[0].quxKey'
+
