@@ -1,0 +1,21 @@
+# Keystore - List all entries in keystore
+keytool -list -keystore keystore.jks
+
+# Keystore - Print contents of an entry (in verbose output)
+keytool -list -v -keystore keystore.jks -alias somealias
+
+# Keystore - Print contents of an entry (in RFC format)
+keytool -list -rfc -keystore keystore.jks -alias somealias
+
+# Keystore - Imports one or all entries from one keystore to another
+keytool -importkeystore -srckeystore src_keystore.jks -destkeystore dest_keystore.jks -srcstoretype <JKS|PKCS11> -deststoretype <JKS|PKCS11>
+
+# Keystore - Imports one or all entries from one keystore to another, without prompting (ie. non-interactive)
+keytool -importkeystore -srckeystore src_keystore.jks -destkeystore dest_keystore.jks -srcstoretype <JKS|PKCS11> -deststoretype <JKS|PKCS11> -noprompt
+
+# Keystore - Imports one or all entries from one keystore to another, without prompting (ie. non-interactive), specify keystore passwords
+keytool -importkeystore -srckeystore src_keystore.jks -destkeystore dest_keystore.jks -srcstoretype <JKS|PKCS11> -deststoretype <JKS|PKCS11> -srcstorepass password1 -deststorepass password2 -noprompt
+
+# Certificates - Print contents of a certificate
+keytool -printcert -v -file webdomain.crt
+
