@@ -1,3 +1,7 @@
+# Keystore - Create an empty keystore
+keytool -genkeypair -keystore emptystore.jks -storepass password1
+keytool -delete -keystore emptystore.jks -storepass password1 -alias mykey
+
 # Keystore - List all entries in keystore
 keytool -list -keystore keystore.jks
 
@@ -16,6 +20,16 @@ keytool -importkeystore -srckeystore src_keystore.jks -destkeystore dest_keystor
 # Keystore - Imports one or all entries from one keystore to another, without prompting (ie. non-interactive), specify keystore passwords
 keytool -importkeystore -srckeystore src_keystore.jks -destkeystore dest_keystore.jks -srcstoretype <JKS|PKCS11> -deststoretype <JKS|PKCS11> -srcstorepass password1 -deststorepass password2 -noprompt
 
+
 # Certificates - Print contents of a certificate
 keytool -printcert -v -file webdomain.crt
+
+# Certificates - Import a certificate from a keystore to another keystore
+keytool -importkeystore -srckeystore srckeystore.jks -destkeystore destkeystore.jks -srcstoretype JKS -deststoretype JKS -srcalias somedomain -srcstorepass changeit -deststorepass changeit -noprompt
+
+# Certificates - Export a certificate from a keystore
+keytool -export -alias somedomain -file file.crt -keystore keystore.jks
+
+# Certificates - Import a certificate into a keystore from a cert file (trust CA of the cert)
+keytool -import -trustcacerts -alias somedomain -file file.crt -keystore keystore.jks
 
