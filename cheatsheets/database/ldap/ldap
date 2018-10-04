@@ -6,6 +6,12 @@
 (ID=xxx)
 (customerID=xxx)
 
+# search by approximative values
+(cn=firstname lastname*)
+
+# query multiple fields
+(|(field1=value1)(field2=value2)(field3=value3))
+
 
 
 ## LDAP Wiki Examples
