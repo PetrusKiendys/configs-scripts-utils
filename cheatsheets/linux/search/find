@@ -1,0 +1,5 @@
+# find files in current dir and subdirs, by name (case-insensitive), matched by expression (supports globbing)
+find . -iname "*something*"
+
+# find files by multiple search criteria (OR operator)
+find . -iname "foo" -o -iname "bar"
