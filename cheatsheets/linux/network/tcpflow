@@ -5,11 +5,12 @@
 #     http://kalilinuxtutorials.com/tcpflow/
 
 
-# capture packages on eth0 interface on ports 80, 443 and 8080, match grep pattern, output to file(s)
+# capture packets on eth0 interface on ports 80, 443 and 8080, match grep pattern, output to file(s)
 tcpflow -pe -i eth0 port 80 or port 443 or port 8080 | grep -oE '(GET|POST|HEAD) .* HTTP/1.[01]|Host: .*'
 
-# capture packages on eth0 interface on ports 80, 443 and 8080, set filename format, use 10 max file descriptors, output to file(s)
+# capture packets on eth0 interface on ports 80, 443 and 8080, set filename format, use 10 max file descriptors, output to file(s)
 tcpflow -pe -T time-%T__src-%A-%a__dst-%B-%b -f 10 -i eth0 port 80 or port 443 or port 8080
 
-# capture packages on eth0 interface on ports 80, 443 and 8080, set output format, output to stdout
+# capture packets on eth0 interface on ports 80, 443 and 8080, set output format, output to console
 tcpflow -pce -T time-%T__src-%A-%a__dst-%B-%b -i eth0 port 80 or port 443 or port 8080
+
