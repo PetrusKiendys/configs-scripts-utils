@@ -1,0 +1,7 @@
+# manage partition tables and partitions on a hard disk
+
+# list partitions
+fdisk -l
+
+# start the partition manipulator
+fdisk /dev/sdX/

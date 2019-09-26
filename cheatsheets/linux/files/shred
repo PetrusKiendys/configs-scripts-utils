@@ -4,3 +4,5 @@ shred -n25 -u <file>
 # forcefully overwrite the file 100 times, add a final overwrite with zeroes, then remove it (verbose output)
 shred -f -n100 -u -v -z <file>
 
+# forcefully overwrite the file (default: 3 times), specify the source of random bytes
+shred -f -random-source=/dev/urandom <file>

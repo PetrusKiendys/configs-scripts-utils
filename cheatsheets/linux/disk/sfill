@@ -1,0 +1,8 @@
+# `sfill` is a secure free disk and inode space wiper, part of the secure_deletion toolkit
+# install the toolkit with: apt-get install secure-delete
+
+# wipe the device fast (insecure mode)
+sfill -f <dir/mnt_point>
+
+# wipe the device, the last write is done by writing zeroes instead of random data (`-z`), verbose output (`-v`)
+sfill -zv /dev/sdX/

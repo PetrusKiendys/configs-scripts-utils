@@ -1,0 +1,8 @@
+# list block devices, in tree-like format
+lsblk
+
+# list block devices, in list format
+lsblk -l
+
+# output info about filesystems
+lsblk -f

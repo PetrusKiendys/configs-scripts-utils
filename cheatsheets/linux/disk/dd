@@ -1,0 +1,3 @@
+# replace contents of `of` with that of `if`, work with `bs` (blocksize) amount of bytes at a time (default: 512), show status progress
+dd if=<in_file> of=<out_file> bs=<blocksize> status=progress
+dd if=[/dev/zero|/dev/urandom] of=/dev/sdX bs=512 status=progress

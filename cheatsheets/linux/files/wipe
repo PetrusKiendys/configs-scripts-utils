@@ -1,0 +1,6 @@
+# securely erase files from magnetic media
+# see great usage examples and further details: `man wipe`
+
+# securely wipe files, recurse into subdirs without following symlinks (`-r`), chmod if write permissions are missing (`-c`),
+# disable confirmation and wipe forcefully (`-f`)
+wipe -rcf /path/to/files

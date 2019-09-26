@@ -1,0 +1,6 @@
+# Search a device for bad blocks.
+# CAUTION: Some usages of badblocks can permanently overwrite/destroy hard drive contents!
+
+# initiate destructive write-mode "test" (`w`): scan for bad blocks by writing patterns on every block of the device, then reading every block and comparing the values,
+# show the progress of the test (`-s`), verbose mode (`-v`)
+badblocks -wsv /dev/sdX

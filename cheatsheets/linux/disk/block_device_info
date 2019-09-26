@@ -1,0 +1,25 @@
+### print size-related info of block devices
+# more info:
+#     - https://www.kernel.org/doc/Documentation/block/queue-sysfs.txt
+#     - https://www.kernel.org/doc/html/latest/block/queue-sysfs.html
+
+# print total size of block device
+cat /sys/block/sdX/size
+
+# print physical block size of block device
+cat /sys/block/sdX/queue/physical_block_size
+
+# print logical block size of block device
+cat /sys/block/sdX/queue/logical_block_size
+
+# print minimum IO size
+cat /sys/block/sdX/queue/minimum_io_size
+
+# print optimal IO size
+cat /sys/block/sdX/queue/optimal_io_size
+
+# print max segment size
+cat /sys/block/sdX/queue/max_segment_size
+
+# print hardware sector size
+cat /sys/block/sdX/queue/hw_sector_size

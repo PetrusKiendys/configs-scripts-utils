@@ -1,0 +1,11 @@
+# view contents of devices (hard disks) in hex or binary format
+#   based on answers given at: https://superuser.com/questions/1115972/viewing-contents-of-hard-drive-in-binary
+
+# view contents of device with GUI application `wxHexEditor`
+wxHexEditor /dev/sdX
+
+# view contents of device with CLI tool `xxd`
+xxd /dev/sdX | less
+
+# print only printable characters of device content
+strings /dev/sdX | less
