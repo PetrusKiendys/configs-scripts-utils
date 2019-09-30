@@ -1,0 +1,8 @@
+# display real-time info about Linux processes
+# also see: `tldr top`
+
+# show processes (default view)
+top
+
+# show processes, only active (not idle or zombie processes)
+top -i

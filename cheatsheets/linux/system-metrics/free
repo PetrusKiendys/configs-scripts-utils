@@ -1,0 +1,19 @@
+# display amount of free and used memory (RAM)
+
+# display system memory (default view)
+free
+
+# display system memory in human readable units
+free -h
+
+# display system memory in MB
+free -m
+
+# display system memory in GB
+free -g
+
+# display system memory, refresh the output every 2 seconds
+free -h -s 2
+
+# display system memory, show the total for RAM and swap
+free -h -t
