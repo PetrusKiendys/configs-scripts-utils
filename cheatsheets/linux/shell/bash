@@ -1,0 +1,10 @@
+# Bourne-Again SHell.
+# sh-compatible command line interpreter.
+
+### Keyboard shortcuts
+# More info here:
+#   - https://www.howtogeek.com/howto/ubuntu/keyboard-shortcuts-for-bash-command-shell-for-ubuntu-debian-suse-redhat-linux-etc/
+#   - https://ss64.com/bash/syntax-keyboard.html
+
+Ctrl+U  Cut the line before the cursor (to the clipboard)
+Ctrl+K  Cut the line after the cursor (to the clipboard)
