@@ -1,3 +1,5 @@
+# The `keytool` command is a key and certificate management utility, mainly for JKS (Java keystore)
+
 # Keystore - Create an empty keystore
 keytool -genkeypair -keystore emptystore.jks -storepass password1
 keytool -delete -keystore emptystore.jks -storepass password1 -alias mykey

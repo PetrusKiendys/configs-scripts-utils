@@ -1,5 +1,10 @@
-# time iteration of noop'ing for x cycles (100000 in example) and display results
+# run any program and report how long it took to run, along with other stats
+
+# report time taken to execute a 100.000 iteration loop of NOOP
 time for i in `seq 1 100000`; do :; done
 
-# time iteration of noop'ing for x cycles (100000 in example) and display results, use /bin/true as noop
+# report time taken to execute a 100.000 iteration loop of NOOP, using `/bin/true`
 time for i in `seq 1 100000`; do true; done
+
+# report time taken to count amount of lines in /etc/hosts
+time wc -l /etc/hosts

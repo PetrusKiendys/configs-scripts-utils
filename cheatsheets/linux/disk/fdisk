@@ -1,4 +1,4 @@
-# manage partition tables and partitions on a hard disk
+# Manage partition tables and partitions on a hard disk
 
 # list partitions
 fdisk -l

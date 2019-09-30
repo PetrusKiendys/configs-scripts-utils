@@ -1,5 +1,5 @@
-# view contents of devices (hard disks) in hex or binary format
-#   based on answers given at: https://superuser.com/questions/1115972/viewing-contents-of-hard-drive-in-binary
+# View contents of devices (hard disks) in hex or binary format
+#   Based on answers given at: https://superuser.com/questions/1115972/viewing-contents-of-hard-drive-in-binary
 
 # view contents of device with GUI application `wxHexEditor`
 wxHexEditor /dev/sdX

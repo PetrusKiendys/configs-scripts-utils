@@ -1,4 +1,4 @@
-# print and concatenate files
+# Print and concatenate files
 
 # print contents of file
 cat [FILE]

@@ -1,3 +1,5 @@
+# Securely delete data by overwriting file with multiple overwrite passes (and deleting the file)
+
 # overwrite the file 25 times, then remove it
 shred -n25 -u [FILE]
 

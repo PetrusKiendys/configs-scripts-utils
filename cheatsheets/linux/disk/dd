@@ -1,3 +1,8 @@
-# replace contents of `of` with that of `if`, work with `bs` (blocksize) amount of bytes at a time (default: 512), show status progress
-dd if=<in_file> of=<out_file> bs=<blocksize> status=progress
-dd if=[/dev/zero|/dev/urandom] of=/dev/sdX bs=512 status=progress
+# dd converts and copies a file,
+# it's commonly used to write the contents of a device file to a target block device
+
+# replace contents of `of` (output file) with that of `if` (input file),
+# work with `bs` (blocksize) amount of bytes at a time (default: 512), show status progress
+# example is provided below the general syntax form
+dd if=[IN_FILE] of=[OUT_FILE] bs=[BLOCKSIZE] status=progress
+dd if=[ /dev/zero | /dev/urandom ] of=/dev/sdX bs=512 status=progress

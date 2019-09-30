@@ -1,4 +1,5 @@
-# Use local SSH keys to authorise logins on a remote machine by installing public key in remote machine `authorized_keys` file
+# Use local SSH keys to authorise logins on a remote machine,
+# this is done by installing public key in remote machine `authorized_keys` file
 
 # copy public key into remote machines `~/.ssh/authorized_keys`
 ssh-copy-id -i ~/.ssh/[FILE].pub [IP_addr]

@@ -1,4 +1,4 @@
-# sed is a stream editor for filtering and transforming text
+# Stream editor for filtering and transforming text
 
 # print all lines
 sed 'n'

@@ -1,5 +1,5 @@
-# display real-time info about Linux processes
-# also see: `tldr top`
+# Display real-time info about Linux processes
+#   see also: `tldr top`
 
 # show processes (default view)
 top

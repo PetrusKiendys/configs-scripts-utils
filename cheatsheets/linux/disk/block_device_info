@@ -1,7 +1,7 @@
-### print size-related info of block devices
+# Print size-related info of block devices
 # more info:
-#     - https://www.kernel.org/doc/Documentation/block/queue-sysfs.txt
-#     - https://www.kernel.org/doc/html/latest/block/queue-sysfs.html
+#   - https://www.kernel.org/doc/Documentation/block/queue-sysfs.txt
+#   - https://www.kernel.org/doc/html/latest/block/queue-sysfs.html
 
 # print total size of block device
 cat /sys/block/sdX/size
