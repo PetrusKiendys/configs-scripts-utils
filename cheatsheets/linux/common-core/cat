@@ -1,2 +1,14 @@
-# cat - "pretty" print contents of listed files
+# print and concatenate files
+
+# print contents of file
+cat [FILE]
+
+# print contents of file, number the output lines
+cat -n [FILE]
+
+# print contents of file, show non-printable and whitespace characters
+cat -vte [FILE]
+
+# TODO: looks very hacky, should probably rewrite to something cleaner
+# special case: "custom pretty print" contents of listed files
 for file in `find . -iname "*<filename_regex>*" | grep "<optional_file_suffix>"`; do echo "==========" && echo `readlink -f $file` && echo "=========="; cat $file; echo -e "\n\n\n"; done | less -MR
