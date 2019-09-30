@@ -1,2 +1,4 @@
+# Compare files and directories
+
 # diff and output lines of unified context
 diff -U

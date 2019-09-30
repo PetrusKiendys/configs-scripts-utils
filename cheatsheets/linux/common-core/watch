@@ -1,2 +1,4 @@
-# watch - watch and print file changes with fixed interval
+# Execute a command repeatedly, and monitor the output in full-screen
+
+# watch and print file changes with fixed interval
 watch -n 1 "ls -lh file.ext > /dev/tty"
