@@ -10,4 +10,7 @@ find /root/path -iname "foo" -o -iname "bar"
 sudo find /root/path -type f -exec du -ha ./ {} + | sort -h -r | head -n 20
 
 # run arbitrary command on each file
-find . -type f -exec <command> '{}' \;
+find . -type f -exec [CMD] '{}' \;
+
+# run multiple arbitrary commands on each file
+find . -type f -exec [CMD1] '{}' \; -exec [CMD2] '{}' \;
