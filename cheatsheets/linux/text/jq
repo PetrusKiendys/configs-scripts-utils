@@ -1,3 +1,5 @@
+# JSON processor for the command-line
+
 # print everything (filter nothing)
 cat data.json | jq .
 cat data.json | jq .[]
@@ -13,5 +15,4 @@ cat data.json | jq '.[].fooKey'
 
 # traverse nested JSON structure (example), both by name of key and index number
 cat data.json | jq '.[][][0].value'
-		jq '.fooKey.barKey.bazKey[0].quxKey'
-
+jq '.fooKey.barKey.bazKey[0].quxKey'

@@ -1,5 +1,7 @@
+# AWK is a pattern scanning and processing language, commonly used to manipulate text and output streams
+
 # process by input field separator ',' (-F\,) and output field separator '\t' (-vOFS='\t')
-cat file.txt | grep "someregex" | awk -F\, -vOFS='\t' '{print $1,$2}'
- 
+cat [FILE] | grep "someregex" | awk -F\, -vOFS='\t' '{print $1,$2}'
+
 # append "prefix-" to column 2
-cat file.txt | grep "someregex" | awk '$2="prefix-"$2'
+cat [FILE] | grep "someregex" | awk '$2="prefix-"$2'

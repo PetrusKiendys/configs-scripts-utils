@@ -1,9 +1,29 @@
-# Useful yum commands
+# Package manager for RHEL, Feodra, and CentOS (older versions)
+# Information taken from:
+#   - https://www.tecmint.com/check-and-install-updates-on-centos-and-rhel/
+#   - https://www.tecmint.com/20-linux-yum-yellowdog-updater-modified-commands-for-package-mangement/
+#   - https://www.digitalocean.com/community/tutorials/package-management-basics-apt-yum-dnf-pkg
+
+# check for updates available for installed packages
 yum check-update
+
+# upgrade system software and dependencies to latest version
 yum update
+
+# upgrade system software and dependencies to latest version, also forces removal of obsolete packages (not recommended!)
 yum upgrade
-yum list installed
-yum list installed | grep "foo"
+
+# install package
+yum install [PKG]
+
+# remove package
+yum remove [PKG]
+
+# show what package a specific file belongs to
+yum provides [FILE]
+
+# list installed packages
+yum list installed | less
+
+# clean yum cache
 yum clean all
-yum remove foo
-yum install foo

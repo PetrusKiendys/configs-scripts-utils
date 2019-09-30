@@ -1,5 +1,8 @@
+# Netcat (nc) is a versatile utility for working with TCP or UDP data:
+#   eg. listen on ports, send data packets, act as proxy, ...
+
 # listen continuously for a connection on port XXXX (verbose output), don't resolve hostname/port
 nc -n -vv -l -k XXXX
- 
+
 # send tcp packet without waiting for timeout
 echo "hello from [env-net-machine]" | nc -w 0 ip port

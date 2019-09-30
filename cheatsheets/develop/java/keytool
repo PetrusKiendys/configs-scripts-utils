@@ -20,7 +20,6 @@ keytool -importkeystore -srckeystore src_keystore.jks -destkeystore dest_keystor
 # Keystore - Imports one or all entries from one keystore to another, without prompting (ie. non-interactive), specify keystore passwords
 keytool -importkeystore -srckeystore src_keystore.jks -destkeystore dest_keystore.jks -srcstoretype <JKS|PKCS11> -deststoretype <JKS|PKCS11> -srcstorepass password1 -deststorepass password2 -noprompt
 
-
 # Certificates - Print contents of a certificate
 keytool -printcert -v -file webdomain.crt
 
@@ -32,4 +31,3 @@ keytool -export -alias somedomain -file file.crt -keystore keystore.jks
 
 # Certificates - Import a certificate into a keystore from a cert file (trust CA of the cert)
 keytool -import -trustcacerts -alias somedomain -file file.crt -keystore keystore.jks
-

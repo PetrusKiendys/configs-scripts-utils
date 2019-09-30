@@ -1,9 +1,9 @@
-# For a very basic tcpflow and explanation see:
+# Capture traffic on a given network interface, similar to `tcpdump`
+# For a very basic tcpflow and explanation, see:
 #     https://explainshell.com/explain?cmd=tcpflow+-p+-c+-i+eth0+port+80
 # Also see tutorials:
 #     http://www.alphadevx.com/a/370-Running-a-network-trace-on-the-command-line-using-tcpflow
 #     http://kalilinuxtutorials.com/tcpflow/
-
 
 # capture packets on eth0 interface on ports 80, 443 and 8080, match grep pattern, output to file(s)
 tcpflow -pe -i eth0 port 80 or port 443 or port 8080 | grep -oE '(GET|POST|HEAD) .* HTTP/1.[01]|Host: .*'
@@ -13,4 +13,3 @@ tcpflow -pe -T time-%T__src-%A-%a__dst-%B-%b -f 10 -i eth0 port 80 or port 443 o
 
 # capture packets on eth0 interface on ports 80, 443 and 8080, set output format, output to console
 tcpflow -pce -T time-%T__src-%A-%a__dst-%B-%b -i eth0 port 80 or port 443 or port 8080
-

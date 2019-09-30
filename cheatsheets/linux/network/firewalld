@@ -1,3 +1,5 @@
+# manage firewall and network zones (in CentOS)
+
 # get default zone
 firewall-cmd --get-default-zone
 

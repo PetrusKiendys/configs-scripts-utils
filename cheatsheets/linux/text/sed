@@ -1,2 +1,25 @@
+# sed is a stream editor for filtering and transforming text
+
+# print all lines
+sed 'n'
+
+# print only odd-numbered lines
+sed 'n;d'
+
+# print line 10 twice
+sed '10p'
+
+# print only the first 10 lines
+sed '10q'
+
+# print only line 10
+sed '10q;d'
+
+# print line 8 to 10 (inclusive)
+sed -n '8,10p'
+
 # remove whitespaces
 sed -e 's/\s*//'
+
+# replace the string 'foo' with 'bar'
+sed -e 's/foo/bar/'

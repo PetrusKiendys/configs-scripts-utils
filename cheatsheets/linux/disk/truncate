@@ -1,2 +1,4 @@
-# truncate - trunc file down to 1kb
+# Shrink or extend size of a file to specified size
+
+# truncate file down to 1 kb
 truncate -s 1000 file.ext

@@ -1,3 +1,5 @@
+# Configure Linux kernel firewall tables, chains and rules (admin tool for IPv4/IPv6 packet filtering and NAT)
+
 # list all rules in all chains, in verbose mode (display interfaces), numeric output for IP addresses
 iptables -L -v -n
 

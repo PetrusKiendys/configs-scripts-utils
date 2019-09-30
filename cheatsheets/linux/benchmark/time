@@ -1,5 +1,5 @@
 # time iteration of noop'ing for x cycles (100000 in example) and display results
 time for i in `seq 1 100000`; do :; done
- 
+
 # time iteration of noop'ing for x cycles (100000 in example) and display results, use /bin/true as noop
 time for i in `seq 1 100000`; do true; done

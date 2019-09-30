@@ -1,5 +1,6 @@
-# openssl - view SSL/TLS handshake when connecting to a server as a client using OpenSSL s_client
-openssl s_client -connect <host>:<port>
+# Use the OpenSSL cryptographic toolkit
 
-# openssl - example of viewing SSL/TLS handshake
+# view SSL/TLS handshake when connecting to a server as a client using OpenSSL s_client,
+# example included
+openssl s_client -connect <host>:<port>
 openssl s_client -connect www.google.com:443

@@ -1,5 +1,7 @@
-# ssh-keygen - display fingerprint of pub/priv key using the MD5 hashing algorithm
+# Generate SSH keys used for authentication, password-less logins, and other stuff
+
+# display fingerprint of public or private key using MD5 hashing algorithm
 ssh-keygen -E md5 -lf ~/.ssh/id_rsa.pub
 
-# ssh-keygen - create new (standard) pub/priv key
+# generate a new public-private key-pair (standard parameters)
 ssh-keygen -t rsa -b 4096 -C "user@mail.com"
